@@ -1,4 +1,4 @@
-{% set version = "4.5.1" %}
+{% set version = "4.8.1" %}
 
 package:
   name: podman-py
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/containers/podman-py/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 464631a8005e61a5118c2d408f373a327efb854074b70ef6e24985d90c0b2231
+  sha256: c580fff98d164ffe60a4832b7bb38ce77871ff4eed02ee5dd8a2eac0fcd15ed1
 
 build:
-  number: 1
+  number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   skip: true  # [win]
 
