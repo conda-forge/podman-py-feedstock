@@ -1,4 +1,4 @@
-{% set version = "5.4.0.1" %}
+{% set version = "5.6.0" %}
 
 package:
   name: podman-py
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/podman/podman-{{ version }}.tar.gz
-  sha256: ee537aaa44ba530fad7cd939d886a7632f9f7018064e7831e8cb614c54cb1789
+  sha256: cc5f7aa9562e30f992fc170a48da970a7132be60d8a2e2941e6c17bd0a0b35c9
 
 build:
   noarch: python
@@ -40,7 +40,7 @@ test:
   requires:
     - pip
     - python {{ python_min }}
-    
+
 about:
   home: https://github.com/containers/podman-py
   license: Apache-2.0
